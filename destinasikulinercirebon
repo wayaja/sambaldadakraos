@@ -1,1 +1,473 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
 
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PTQGTKSM');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '960251670454548');
+    fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#174936">
+  <meta name="description" content="Pilihan kuliner Cirebonan di tengah kota. Nikmati ayam pejantan, tutug oncom, ikan asin peda, pencok, sayur asem, dan sambal yang diulek saat dipesan.">
+  <title>Sambal Dadak Raos — Kuliner Wajib Mampir di Cirebon</title>
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23174936'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia' font-size='29' font-weight='700' fill='%23F8F1E2'%3ESD%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --forest: #174936;
+      --forest-dark: #0d3426;
+      --forest-soft: #2c624b;
+      --red: #a63824;
+      --gold: #c6a05a;
+      --cream: #f8f1e2;
+      --cream-deep: #ebddca;
+      --paper: #fdfbf7;
+      --ink: #20251f;
+      --muted: #687067;
+      --line: rgba(23, 73, 54, .15);
+      --shadow: 0 20px 55px rgba(22, 57, 42, .14);
+      --serif: Georgia, 'Times New Roman', serif;
+      --sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: var(--cream); font: 16px/1.55 var(--sans); }
+    body.modal-open { overflow: hidden; }
+    a { color: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button { font: inherit; }
+    img { max-width: 100%; display: block; }
+    .shell { width: min(1160px, calc(100% - 36px)); margin: 0 auto; }
+
+    .topbar { position: absolute; inset: 0 0 auto; z-index: 5; padding: 18px 0; color: #fff; }
+    .topbar .shell { display: flex; align-items: center; justify-content: space-between; }
+    .brand { display: block; text-decoration: none; }
+    .brand img { width: 250px; max-width: 55vw; filter: drop-shadow(0 2px 6px rgba(0,0,0,.22)); }
+    .top-link { padding: 9px 13px; border: 1px solid rgba(255,255,255,.34); border-radius: 999px; background: rgba(9,42,30,.28); font-size: 14px; font-weight: 800; text-decoration: none; backdrop-filter: blur(8px); }
+
+    .hero { min-height: 720px; display: grid; align-items: end; position: relative; isolation: isolate; color: #fff; background: var(--forest-dark); overflow: hidden; }
+    .hero::before { content: ''; position: absolute; inset: 0; z-index: -2; background: url('https://i.ibb.co.com/3mQFNCTQ/hero-menu-sambal-dadak-raos.webp') 60% center / cover no-repeat; transform: scale(1.01); filter: saturate(.92) contrast(1.03); }
+    .hero::after { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(9,42,30,.97) 0%, rgba(15,61,44,.89) 43%, rgba(13,48,35,.2) 78%), linear-gradient(0deg, rgba(8,36,26,.7), transparent 48%); }
+    .hero-content { padding: 150px 0 66px; max-width: 760px; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 9px; margin: 0 0 18px; padding: 8px 12px; border: 1px solid rgba(240,211,145,.34); border-radius: 999px; color: #f8e1aa; background: rgba(9,42,30,.44); font-size: 13px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; backdrop-filter: blur(8px); }
+    .eyebrow::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--red); box-shadow: 0 0 0 3px rgba(166,56,36,.2); }
+    h1, h2, p { margin-top: 0; }
+    h1 { margin-bottom: 20px; max-width: 760px; font-family: var(--serif); font-size: clamp(40px, 5vw, 64px); line-height: 1.02; letter-spacing: -.043em; text-wrap: balance; }
+    .hero-lead { max-width: 650px; margin-bottom: 28px; color: rgba(255,255,255,.9); font-size: 18px; font-weight: 550; line-height: 1.6; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .button { min-height: 52px; padding: 0 20px; border: 0; border-radius: 14px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; text-decoration: none; font-size: 15px; font-weight: 900; cursor: pointer; transition: transform .2s ease, background .2s ease; }
+    .button:hover { transform: translateY(-2px); }
+    .button-primary { background: var(--cream); color: var(--forest-dark); }
+    .button-whatsapp { background: #217a4b; color: #fff; box-shadow: 0 10px 24px rgba(5,36,21,.22); }
+    .button-secondary { background: rgba(255,255,255,.11); color: #fff; border: 1px solid rgba(255,255,255,.3); backdrop-filter: blur(8px); }
+    .button svg { width: 18px; height: 18px; flex: 0 0 auto; }
+
+    .quick-strip { position: relative; z-index: 2; margin: -30px auto 0; display: grid; grid-template-columns: repeat(4, 1fr); background: var(--paper); border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow); overflow: hidden; }
+    .quick-item { padding: 20px 22px; border-right: 1px solid var(--line); }
+    .quick-item:last-child { border: 0; }
+    .quick-item small { display: block; margin-bottom: 4px; color: var(--muted); font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+    .quick-item strong { color: var(--forest); font-size: 15px; }
+
+    section { padding: 92px 0; }
+    .section-kicker { margin: 0 0 10px; color: var(--red); font-size: 13px; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; }
+    h2 { margin-bottom: 14px; color: var(--forest); font-family: var(--serif); font-size: clamp(34px, 4.5vw, 52px); line-height: 1.05; letter-spacing: -.035em; text-wrap: balance; }
+    .section-lead { max-width: 680px; color: var(--muted); font-size: 17px; }
+
+    .pattern-section, .reviews { position: relative; isolation: isolate; overflow: hidden; }
+    .pattern-section::before, .reviews::before { content: ''; position: absolute; inset: 0; z-index: 0; background-image: url('https://i.ibb.co.com/HfSKhYt2/motif-mega-mendung-desktop.webp'); background-position: top center; background-size: 100% auto; background-repeat: repeat-y; opacity: .18; mix-blend-mode: multiply; pointer-events: none; }
+    .pattern-section > .shell, .reviews > .shell { position: relative; z-index: 1; }
+
+    .carousel-wrap { position: relative; margin-top: 34px; }
+    .carousel-track { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding: 2px 2px 15px; }
+    .carousel-track::-webkit-scrollbar { display: none; }
+    .dish-card { flex: 0 0 calc((100% - 32px) / 3); scroll-snap-align: start; margin: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 20px; background: var(--paper); box-shadow: 0 10px 25px rgba(31,62,47,.08); }
+    .dish-card img { width: 100%; aspect-ratio: 4 / 4.5; object-fit: cover; filter: saturate(.96) contrast(1.035) brightness(.99); }
+    .dish-card figcaption { min-height: 124px; padding: 15px 17px 17px; display: block; color: var(--forest); }
+    .dish-card figcaption strong { display: block; font: 800 19px/1.23 var(--serif); }
+    .dish-card figcaption span { display: block; margin-top: 7px; color: var(--muted); font: 500 14px/1.45 var(--sans); }
+    .carousel-arrow { position: absolute; z-index: 2; top: 44%; transform: translateY(-50%); width: 46px; height: 46px; border: 1px solid rgba(255,255,255,.7); border-radius: 50%; display: grid; place-items: center; color: #fff; background: rgba(13,52,38,.9); box-shadow: 0 8px 20px rgba(15,52,38,.2); cursor: pointer; font-size: 27px; line-height: 1; }
+    .carousel-arrow.prev { left: -18px; }
+    .carousel-arrow.next { right: -18px; }
+    .carousel-dots { display: flex; justify-content: center; gap: 7px; margin-top: 10px; }
+    .carousel-dots button { width: 9px; height: 9px; padding: 0; border: 0; border-radius: 50%; background: rgba(23,73,54,.24); cursor: pointer; }
+    .carousel-dots button.active { width: 24px; border-radius: 999px; background: var(--forest); }
+    .carousel-dots button:nth-child(n+5) { display: none; }
+    .menu-action { margin-top: 22px; text-align: center; }
+    .menu-action .button { background: var(--forest); color: #fff; }
+
+    .menu-proof { margin: 22px 0 0; padding: 13px 18px; border: 1px solid rgba(166,56,36,.2); border-radius: 14px; color: #6d291c; background: #f7dfb9; font-weight: 850; text-align: center; }
+
+    .reviews { padding: 0 0 92px; }
+    .reviews-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; }
+    .reviews-head .section-lead { margin-bottom: 0; }
+    .review-track { margin-top: 30px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .review-card { min-height: 280px; padding: 24px; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 22px; background: var(--paper); box-shadow: 0 12px 30px rgba(23,73,54,.08); }
+    .review-meta { display: flex; align-items: start; justify-content: space-between; gap: 12px; }
+    .review-person strong { display: block; color: var(--forest); font-size: 17px; }
+    .review-person span { color: var(--muted); font-size: 13px; }
+    .stars { flex: 0 0 auto; color: #b78122; font-size: 15px; letter-spacing: .08em; }
+    .review-quote { margin: 24px 0; color: var(--ink); font: 700 20px/1.5 var(--serif); }
+    .review-source { margin-top: auto; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; font-weight: 750; }
+    .reviews-action { margin-top: 22px; text-align: center; }
+    .reviews-action .button { color: #fff; background: var(--forest); }
+
+    .visit { background: var(--paper); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .visit-grid { display: grid; grid-template-columns: .98fr 1.02fr; gap: 52px; align-items: center; }
+    .outlet-photo { margin-top: 24px; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border: 5px solid var(--cream); border-radius: 22px; box-shadow: var(--shadow); }
+    .outlet-photo img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.92) contrast(1.04); }
+    .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .feature-card { min-height: 150px; padding: 20px; border-radius: 20px; background: linear-gradient(145deg, var(--cream), #fffaf0); border: 1px solid var(--line); box-shadow: 0 8px 22px rgba(23,73,54,.055); }
+    .feature-icon { width: 42px; height: 42px; margin-bottom: 15px; border: 1px solid rgba(198,160,90,.8); border-radius: 12px; display: grid; place-items: center; background: var(--forest-dark); color: var(--paper); box-shadow: inset 0 0 0 2px rgba(255,255,255,.08); }
+    .feature-icon svg { width: 22px; height: 22px; stroke: #fffdf7; stroke-width: 2.35; }
+    .feature-card strong { display: block; margin-bottom: 4px; color: var(--forest); font-size: 16px; }
+    .feature-card span { color: var(--muted); font-size: 13px; }
+
+    .route-card { display: grid; grid-template-columns: 1.05fr .95fr; gap: 30px; padding: 34px; color: #fff; border-radius: 28px; background: var(--forest); box-shadow: var(--shadow); overflow: hidden; }
+    .route-copy { align-self: center; }
+    .route-card .section-kicker { color: #e7c97f; }
+    .route-card h2 { max-width: 520px; color: #fff; font-size: clamp(34px, 4vw, 48px); }
+    .route-card p { color: rgba(255,255,255,.82); }
+    .address { margin: 22px 0 24px; padding: 16px 0; border-top: 1px solid rgba(255,255,255,.22); border-bottom: 1px solid rgba(255,255,255,.22); display: grid; gap: 12px; }
+    .address small { display: block; margin-bottom: 3px; color: #bed3c8; font-size: 12px; text-transform: uppercase; letter-spacing: .1em; font-weight: 900; }
+    .address strong { font-size: 16px; }
+    .route-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    .route-actions .maps { background: var(--cream); color: var(--forest-dark); }
+    .route-actions .wa { background: rgba(255,255,255,.1); color: #fff; border: 1px solid rgba(255,255,255,.26); }
+    .facade-photo { min-height: 465px; overflow: hidden; border-radius: 20px; border: 1px solid rgba(255,255,255,.16); }
+    .facade-photo img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.88) contrast(1.04) brightness(.96); }
+    .route-note { margin: 13px 0 0; color: rgba(255,255,255,.68) !important; font-size: 13px; }
+
+    footer { padding: 34px 0 44px; color: var(--muted); font-size: 13px; background: var(--paper); }
+    footer .shell { display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+    footer strong { color: var(--forest); font-size: 15px; }
+    .footer-tagline { color: var(--red); font-weight: 750; }
+    .social-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 9px; }
+    .social-link { min-height: 42px; padding: 0 14px; display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 999px; color: var(--forest); background: var(--cream); font-weight: 800; text-decoration: none; }
+    .social-link:hover { border-color: var(--forest); }
+    .social-link svg { width: 17px; height: 17px; stroke: currentColor; }
+
+    .sticky { display: none; }
+    .sticky a, .sticky button { min-height: 50px; border: 0; display: flex; align-items: center; justify-content: center; gap: 8px; border-radius: 12px; color: #fff; background: transparent; text-decoration: none; font-size: 14px; font-weight: 900; cursor: pointer; }
+    .sticky svg { width: 18px; height: 18px; }
+    .sticky .menu-open { background: var(--forest-soft); }
+    .sticky .route { background: var(--cream); color: var(--forest-dark); }
+
+    dialog { width: min(820px, calc(100% - 24px)); max-height: 92vh; padding: 0; border: 0; border-radius: 20px; background: var(--paper); box-shadow: 0 28px 90px rgba(8,31,23,.42); }
+    dialog::backdrop { background: rgba(8,30,22,.76); backdrop-filter: blur(5px); }
+    .dialog-head { position: sticky; top: 0; z-index: 2; padding: 14px 16px; display: flex; align-items: center; justify-content: space-between; background: rgba(255,253,247,.97); border-bottom: 1px solid var(--line); }
+    .dialog-head strong { color: var(--forest); font-family: var(--serif); font-size: 20px; }
+    .close { width: 42px; height: 42px; border: 0; border-radius: 50%; background: var(--cream-deep); color: var(--forest); font-size: 24px; cursor: pointer; }
+    .menu-image { width: 100%; height: auto; }
+    .dialog-foot { padding: 15px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; background: var(--paper); }
+    .dialog-foot .button-primary { background: var(--forest); color: #fff; }
+    .dialog-foot .button-secondary { background: var(--cream); color: var(--forest); border-color: var(--line); }
+
+    @media (max-width: 760px) {
+      body { padding-bottom: 88px; }
+      .shell { width: min(100% - 28px, 640px); }
+      .topbar { padding-top: 14px; }
+      .brand img { width: 205px; }
+      .top-link { font-size: 13px; }
+      .hero { min-height: 710px; align-items: end; }
+      .hero::before { background-position: 66% center; }
+      .hero::after { background: linear-gradient(0deg, rgba(8,39,28,.99) 0%, rgba(12,53,38,.91) 50%, rgba(12,43,32,.18) 82%); }
+      .hero-content { padding: 195px 0 58px; }
+      h1 { max-width: 560px; font-size: clamp(36px, 9.7vw, 38px); line-height: 1.04; }
+      .hero-lead { font-size: 16px; }
+      .hero-actions .button { width: 100%; }
+      .quick-strip { margin-top: -22px; grid-template-columns: 1fr 1fr; border-radius: 18px; }
+      .quick-item { padding: 16px; }
+      .quick-item:nth-child(2) { border-right: 0; }
+      .quick-item:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+      section { padding: 70px 0; }
+      h2 { font-size: 30px; line-height: 1.08; }
+      .pattern-section::before, .reviews::before { background-image: url('https://i.ibb.co.com/bjqtfg97/motif-mega-mendung-mobile.webp'); background-size: 100% auto; background-repeat: repeat-y; opacity: .16; }
+      .dish-card { flex-basis: 84%; }
+      .dish-card figcaption strong { font-size: 18px; }
+      .carousel-arrow { width: 42px; height: 42px; }
+      .carousel-arrow.prev { left: -8px; }
+      .carousel-arrow.next { right: -8px; }
+      .carousel-dots button:nth-child(n+5) { display: block; }
+      .reviews { padding-bottom: 70px; }
+      .reviews-head { display: block; }
+      .review-track { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding: 2px 2px 16px; }
+      .review-track::-webkit-scrollbar { display: none; }
+      .review-card { flex: 0 0 88%; min-height: 270px; scroll-snap-align: start; }
+      .visit-grid { grid-template-columns: 1fr; gap: 28px; }
+      .feature-grid { display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding: 2px 2px 12px; }
+      .feature-grid::-webkit-scrollbar { display: none; }
+      .feature-card { flex: 0 0 86%; min-height: 150px; scroll-snap-align: start; }
+      .outlet-photo { width: 100%; }
+      .feature-grid { gap: 9px; }
+      .feature-card { min-height: 145px; padding: 16px; }
+      .route-card { grid-template-columns: 1fr; padding: 22px; }
+      .facade-photo { min-height: 330px; order: -1; }
+      .route-actions .button { width: 100%; }
+      footer .shell { display: block; }
+      .social-links { margin-top: 18px; justify-content: flex-start; }
+      .dialog-foot { grid-template-columns: 1fr; }
+      .sticky { position: fixed; z-index: 20; left: 50%; bottom: 14px; transform: translate(-50%, 18px); width: calc(100% - 24px); padding: 7px; grid-template-columns: 1fr 1fr; gap: 7px; border: 1px solid rgba(255,255,255,.13); border-radius: 18px; background: rgba(12,48,35,.94); backdrop-filter: blur(14px); box-shadow: 0 16px 38px rgba(10,38,27,.3); opacity: 0; visibility: hidden; pointer-events: none; transition: opacity .2s ease, transform .2s ease, visibility .2s ease; }
+      .sticky.is-visible { display: grid; opacity: 1; visibility: visible; pointer-events: auto; transform: translate(-50%, 0); }
+    }
+
+    @media (max-width: 430px) {
+      .brand img { width: 180px; }
+      .feature-card { min-height: 150px; padding: 18px; }
+      .feature-card strong { font-size: 15px; }
+      .feature-card span { font-size: 12px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .button { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTQGTKSM"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Meta Pixel Code (noscript) -->
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=960251670454548&amp;ev=PageView&amp;noscript=1"
+  alt=""></noscript>
+  <!-- End Meta Pixel Code (noscript) -->
+
+  <header class="topbar">
+    <div class="shell">
+      <a class="brand" href="#atas" aria-label="Sambal Dadak Raos"><img src="https://i.ibb.co.com/SDXFyqpv/logo-sambal-dadak-raos.webp" alt="Sambal Dadak Raos — Sambalnya Bikin Balik Lagi"></a>
+      <a class="top-link" href="#lokasi">Lokasi &amp; rute</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="atas">
+      <div class="shell">
+        <div class="hero-content">
+          <p class="eyebrow">Kuliner Cirebonan di tengah kota</p>
+          <h1>Ayam Pejantan Goreng dengan Sambal yang Diulek Saat Dipesan</h1>
+          <p class="hero-lead">Selain ayam pejantan, tersedia tutug oncom, ikan asin peda, pencok, dan sayur asem. Bisa makan di ruangan AC maupun non-AC.</p>
+          <div class="actions hero-actions">
+            <button class="button button-primary menu-open" type="button" data-track="view_menu" data-track-location="hero">Lihat Menu &amp; Harga</button>
+            <a class="button button-secondary" href="https://share.google/ONDkIrV2JnHUREts3" target="_blank" rel="noopener" data-track="open_maps" data-track-location="hero"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s6-5.1 6-11a6 6 0 1 0-12 0c0 5.9 6 11 6 11Z"/><circle cx="12" cy="10" r="2"/></svg>Buka Rute ke Lokasi</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="shell quick-strip" aria-label="Informasi singkat">
+      <div class="quick-item"><small>Menu</small><strong>Pilihan Menu Cirebonan</strong></div>
+      <div class="quick-item"><small>Ciri khas</small><strong>Sambal Diulek Saat Dipesan</strong></div>
+      <div class="quick-item"><small>Jam buka</small><strong>10.00–20.00</strong></div>
+      <div class="quick-item"><small>Lokasi</small><strong>Di tengah Kota Cirebon</strong></div>
+    </div>
+
+    <section class="pattern-section" id="menu">
+      <div class="shell">
+        <p class="section-kicker">Pilihan menu</p>
+        <h2>Kalau Mampir, Mau Coba yang Mana?</h2>
+        <p class="section-lead">Ada ayam pejantan, tutug oncom, ikan asin peda, sayur asem, pencok, ikan nila, dan lele.</p>
+
+        <div class="carousel-wrap">
+          <button class="carousel-arrow prev" type="button" aria-label="Menu sebelumnya">‹</button>
+          <div class="carousel-track" id="menuTrack">
+            <figure class="dish-card"><img src="https://i.ibb.co.com/RpNrZsbB/menu-ayam-pejantan-goreng.webp" alt="Ayam pejantan goreng"><figcaption><strong>Ayam Pejantan Goreng</strong><span>Garing di luar, juicy di dalam, disajikan dengan serundeng gurih.</span></figcaption></figure>
+            <figure class="dish-card"><img src="https://i.ibb.co.com/B5F5ktM7/menu-nasi-tutug-oncom-jukut-goreng.webp" alt="Nasi tutug oncom dan jukut goreng"><figcaption><strong>Nasi Tutug Oncom &amp; Jukut Goreng</strong><span>Nasi hangat dengan oncom dan jukut goreng.</span></figcaption></figure>
+            <figure class="dish-card"><img src="https://i.ibb.co.com/MxSMMvhP/menu-ikan-asin-peda-sambal-dadak.webp" alt="Ikan asin peda dan sambal dadak"><figcaption><strong>Ikan Asin Peda &amp; Sambal Dadak</strong><span>Ikan asin peda disajikan dengan sambal dadak.</span></figcaption></figure>
+            <figure class="dish-card"><img loading="lazy" src="https://i.ibb.co.com/gbZqpVft/menu-sayur-asem-sambal-goang-tomat.webp" alt="Sayur asem dan sambal goang tomat"><figcaption><strong>Sayur Asem &amp; Sambal Goang Tomat</strong><span>Segar sayur asem, ditemani sambal goang tomat.</span></figcaption></figure>
+            <figure class="dish-card"><img loading="lazy" src="https://i.ibb.co.com/r2jwnmrR/menu-pencok-leunca-pencok-katel.webp" alt="Pencok leunca dan pencok katel"><figcaption><strong>Pencok Leunca &amp; Pencok Katel</strong><span>Rasa kencur dan cabainya kuat.</span></figcaption></figure>
+            <figure class="dish-card"><img loading="lazy" src="https://i.ibb.co.com/zqjGqcG/menu-nila-bakar-lele-goreng-serundeng.webp" alt="Nila bakar, lele goreng dan serundeng"><figcaption><strong>Nila Bakar, Lele Goreng &amp; Serundeng</strong><span>Pilih nila bakar atau lele goreng dengan serundeng.</span></figcaption></figure>
+          </div>
+          <button class="carousel-arrow next" type="button" aria-label="Menu berikutnya">›</button>
+        </div>
+        <div class="carousel-dots" aria-label="Posisi slider menu">
+          <button class="active" type="button" aria-label="Menu 1"></button><button type="button" aria-label="Menu 2"></button><button type="button" aria-label="Menu 3"></button><button type="button" aria-label="Menu 4"></button><button type="button" aria-label="Menu 5"></button><button type="button" aria-label="Menu 6"></button>
+        </div>
+        <p class="menu-proof">Sambal dadaknya sudah terjual ribuan porsi.</p>
+        <div class="menu-action"><button class="button menu-open" type="button" data-track="view_menu" data-track-location="menu_section">Lihat Buku Menu &amp; Harga</button></div>
+      </div>
+    </section>
+
+    <section class="reviews" id="ulasan">
+      <div class="shell">
+        <div class="reviews-head">
+          <div>
+            <p class="section-kicker">Ulasan pengunjung</p>
+            <h2>Pengalaman Pengunjung Setelah Makan di Sini</h2>
+            <p class="section-lead">Beberapa ulasan terbaru dari pengunjung Sambal Dadak Raos di Google Maps.</p>
+          </div>
+        </div>
+        <div class="review-track" aria-label="Ulasan pengunjung">
+          <article class="review-card"><div class="review-meta"><div class="review-person"><strong>Vita Rahman</strong></div><span class="stars" aria-label="5 dari 5 bintang">★★★★★</span></div><p class="review-quote">“Masakannya smua fresh, layanannya juga bagus. Bolak balik kesini gak pernah bosen.”</p><span class="review-source">Ulasan Google Maps</span></article>
+          <article class="review-card"><div class="review-meta"><div class="review-person"><strong>Fitamala Juliasih</strong><span>Local Guide</span></div><span class="stars" aria-label="5 dari 5 bintang">★★★★★</span></div><p class="review-quote">“Pindah tempat juga makin upgrade pelayanannya, makanannya, tempatnya, harga juga masih termasuk murah untuk kelasnya.”</p><span class="review-source">Ulasan Google Maps</span></article>
+          <article class="review-card"><div class="review-meta"><div class="review-person"><strong>Imas Setiyani</strong><span>Local Guide</span></div><span class="stars" aria-label="5 dari 5 bintang">★★★★★</span></div><p class="review-quote">“Makanan enak-enak. Pelayanannya sangat ramah sekali. Full service banget.”</p><span class="review-source">Ulasan Google Maps</span></article>
+        </div>
+        <div class="reviews-action"><a class="button" href="https://share.google/ONDkIrV2JnHUREts3" target="_blank" rel="noopener" data-track="view_reviews" data-track-location="reviews_section">Lihat Ulasan Lainnya di Google Maps</a></div>
+      </div>
+    </section>
+
+    <section class="visit" id="tempat">
+      <div class="shell visit-grid">
+        <div>
+          <p class="section-kicker">Sebelum mampir</p>
+          <h2>Lihat Tempat dan Fasilitasnya</h2>
+          <p class="section-lead">Tersedia ruangan AC dan non-AC. Tinggal pilih yang paling nyaman untuk makan bersama.</p>
+          <div class="outlet-photo"><img loading="lazy" src="https://i.ibb.co.com/5gmgKsfw/suasana-restoran-ramai.webp" alt="Suasana ramai di Sambal Dadak Raos"></div>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card"><span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2v20M4.2 6.5l15.6 11M19.8 6.5l-15.6 11M2 12h20"/></svg></span><strong>Ruangan AC</strong><span>Pilihan ruangan untuk makan lebih sejuk.</span></div>
+          <div class="feature-card"><span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19h16M6 19V9h12v10M9 13h6"/></svg></span><strong>Ruangan Non-AC</strong><span>Pilihan ruang untuk makan bersama.</span></div>
+          <div class="feature-card"><span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 17h18M5 17l1-7h12l1 7M7 10l2-4h6l2 4M7 17v3M17 17v3"/></svg></span><strong>Area Parkir Luas &amp; Nyaman</strong><span>Lebih praktis saat datang bersama.</span></div>
+          <div class="feature-card"><span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 20h16M6 20v-8l6-7 6 7v8M9 20v-5h6v5M12 5V2"/></svg></span><strong>Tersedia Tempat Sholat</strong><span>Dapat digunakan oleh pengunjung selama berada di restoran.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pattern-section" id="lokasi">
+      <div class="shell">
+        <div class="route-card">
+          <div class="route-copy">
+            <p class="section-kicker">Lokasi Sambal Dadak Raos</p>
+            <h2>Cek Jam Buka dan Rute Sebelum Datang</h2>
+            <p>Gunakan Google Maps untuk menuju Sambal Dadak Raos di Jl. Dr. Setiabudi No. 17, Kota Cirebon.</p>
+            <div class="address">
+              <div><small>Alamat sekarang</small><strong>Jl. Dr. Setiabudi No. 17, Kota Cirebon</strong></div>
+              <div><small>Jam buka</small><strong>Setiap hari, 10.00–20.00</strong></div>
+            </div>
+            <div class="route-actions">
+              <a class="button maps" href="https://share.google/ONDkIrV2JnHUREts3" target="_blank" rel="noopener" data-track="open_maps" data-track-location="location_section">Buka Rute di Google Maps</a>
+              <a class="button wa" href="https://wa.me/6281314010671?text=Halo%20Sambal%20Dadak%20Raos%2C%20saya%20mau%20tanya%20tempat%20untuk%20makan." target="_blank" rel="noopener" data-track="contact_whatsapp" data-track-location="location_section">Tanya tempat via WhatsApp</a>
+            </div>
+            <p class="route-note">Informasi lebih lanjut: 0813-1401-0671.</p>
+          </div>
+          <div class="facade-photo"><img loading="lazy" src="https://i.ibb.co.com/bRywb7d6/outlet-tampak-depan.webp" alt="Tampak depan Sambal Dadak Raos di Jalan Dr. Setiabudi No. 17"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell">
+      <p><strong>Sambal Dadak Raos</strong><br><span class="footer-tagline">Sambalnya bikin balik lagi.</span></p>
+      <div class="social-links" aria-label="Media sosial Sambal Dadak Raos">
+        <a class="social-link" href="https://www.instagram.com/sambaldadakraos" target="_blank" rel="noopener" aria-label="Instagram Sambal Dadak Raos" data-track="open_instagram" data-track-location="footer"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>Instagram</a>
+        <a class="social-link" href="https://www.tiktok.com/@sambaldadakraos" target="_blank" rel="noopener" aria-label="TikTok Sambal Dadak Raos" data-track="open_tiktok" data-track-location="footer"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><path d="M15 4v10.5a4.5 4.5 0 1 1-4-4.47M15 4c.8 2.2 2.4 3.6 5 4"/></svg>TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <nav class="sticky" aria-label="Tindakan cepat"><button class="menu-open" type="button" data-track="view_menu" data-track-location="sticky_mobile">Lihat Menu</button><a class="route" href="https://share.google/ONDkIrV2JnHUREts3" target="_blank" rel="noopener" data-track="open_maps" data-track-location="sticky_mobile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s6-5.1 6-11a6 6 0 1 0-12 0c0 5.9 6 11 6 11Z"/><circle cx="12" cy="10" r="2"/></svg>Buka Rute</a></nav>
+
+  <dialog id="menuDialog" aria-labelledby="menuTitle">
+    <div class="dialog-head"><strong id="menuTitle">Menu Sambal Dadak Raos</strong><button class="close" type="button" aria-label="Tutup menu">×</button></div>
+    <img class="menu-image" src="https://i.ibb.co.com/dwRDgZbn/buku-menu-lengkap.webp" alt="Buku menu dan harga Sambal Dadak Raos">
+    <div class="dialog-foot"><a class="button button-primary" href="https://wa.me/6281314010671" target="_blank" rel="noopener" data-track="contact_whatsapp" data-track-location="menu_dialog">Tanya lewat WhatsApp</a><button class="button button-secondary close-bottom" type="button">Tutup menu</button></div>
+  </dialog>
+
+  <script>
+    const track = document.getElementById('menuTrack');
+    const cards = Array.from(track.querySelectorAll('.dish-card'));
+    const dots = Array.from(document.querySelectorAll('.carousel-dots button'));
+    const step = () => cards[0].getBoundingClientRect().width + 16;
+    const goTo = (index) => track.scrollTo({ left: cards[index].offsetLeft - track.offsetLeft, behavior: 'smooth' });
+    document.querySelector('.carousel-arrow.prev').addEventListener('click', () => track.scrollBy({ left: -step(), behavior: 'smooth' }));
+    document.querySelector('.carousel-arrow.next').addEventListener('click', () => track.scrollBy({ left: step(), behavior: 'smooth' }));
+    dots.forEach((dot, index) => dot.addEventListener('click', () => goTo(index)));
+    let scrollTimer;
+    track.addEventListener('scroll', () => {
+      window.clearTimeout(scrollTimer);
+      scrollTimer = window.setTimeout(() => {
+        const lastPosition = window.innerWidth <= 760 ? cards.length - 1 : cards.length - 3;
+        const active = Math.max(0, Math.min(lastPosition, Math.round(track.scrollLeft / step())));
+        dots.forEach((dot, index) => dot.classList.toggle('active', index === active));
+      }, 70);
+    }, { passive: true });
+
+    const dialog = document.getElementById('menuDialog');
+    const closeMenu = () => { dialog.close(); document.body.classList.remove('modal-open'); };
+    document.querySelectorAll('.menu-open').forEach((button) => button.addEventListener('click', () => { dialog.showModal(); document.body.classList.add('modal-open'); }));
+    document.querySelector('.close').addEventListener('click', closeMenu);
+    document.querySelector('.close-bottom').addEventListener('click', closeMenu);
+    dialog.addEventListener('click', (event) => { if (event.target === dialog) closeMenu(); });
+    dialog.addEventListener('close', () => document.body.classList.remove('modal-open'));
+
+    const sticky = document.querySelector('.sticky');
+    const hero = document.querySelector('.hero');
+    const locationSection = document.getElementById('lokasi');
+    const updateSticky = () => {
+      const mobile = window.innerWidth <= 760;
+      const pastHero = hero.getBoundingClientRect().bottom <= 0;
+      const locationRect = locationSection.getBoundingClientRect();
+      const locationVisible = locationRect.top < window.innerHeight && locationRect.bottom > 0;
+      sticky.classList.toggle('is-visible', mobile && pastHero && !locationVisible);
+    };
+    window.addEventListener('scroll', updateSticky, { passive: true });
+    window.addEventListener('resize', updateSticky);
+    updateSticky();
+
+    // Funnel ringkas: foto menu terlihat, klik Google Maps, dan klik WhatsApp.
+    // PageView Google dikirim oleh Google tag melalui GTM; PageView Meta dikirim di <head>.
+    const pushDataLayerEvent = (eventName, eventLocation) => {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: eventName, event_location: eventLocation });
+    };
+
+    let menuPhotosViewed = false;
+    const menuPhotos = document.querySelector('.carousel-wrap');
+    const menuObserver = new IntersectionObserver((entries, observer) => {
+      if (!menuPhotosViewed && entries.some((entry) => entry.isIntersecting && entry.intersectionRatio >= 0.5)) {
+        menuPhotosViewed = true;
+        pushDataLayerEvent('view_content', 'menu_photos');
+        if (typeof window.fbq === 'function') {
+          window.fbq('track', 'ViewContent', { content_name: 'Foto Menu' });
+        }
+        observer.disconnect();
+      }
+    }, { threshold: [0.5] });
+    menuObserver.observe(menuPhotos);
+
+    document.querySelectorAll('[data-track="open_maps"]').forEach((element) => {
+      element.addEventListener('click', () => {
+        const eventLocation = element.dataset.trackLocation || 'unknown';
+        pushDataLayerEvent('click_google_maps', eventLocation);
+        if (typeof window.fbq === 'function') {
+          window.fbq('trackCustom', 'ClickGoogleMaps', { event_location: eventLocation });
+        }
+      });
+    });
+
+    document.querySelectorAll('[data-track="contact_whatsapp"]').forEach((element) => {
+      element.addEventListener('click', () => {
+        const eventLocation = element.dataset.trackLocation || 'unknown';
+        pushDataLayerEvent('click_whatsapp', eventLocation);
+        if (typeof window.fbq === 'function') {
+          window.fbq('track', 'Contact', { contact_method: 'whatsapp', event_location: eventLocation });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
