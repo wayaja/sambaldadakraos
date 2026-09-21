@@ -11,21 +11,6 @@
   })(window,document,'script','dataLayer','GTM-PTQGTKSM');</script>
   <!-- End Google Tag Manager -->
 
-  <!-- Meta Pixel Code -->
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '960251670454548');
-    fbq('track', 'PageView');
-  </script>
-  <!-- End Meta Pixel Code -->
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#174936">
   <meta name="description" content="Pilihan kuliner Cirebonan di tengah kota. Nikmati ayam pejantan, tutug oncom, ikan asin peda, pencok, sayur asem, dan sambal yang diulek saat dipesan.">
@@ -250,12 +235,6 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <!-- Meta Pixel Code (noscript) -->
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=960251670454548&amp;ev=PageView&amp;noscript=1"
-  alt=""></noscript>
-  <!-- End Meta Pixel Code (noscript) -->
-
   <header class="topbar">
     <div class="shell">
       <a class="brand" href="#atas" aria-label="Sambal Dadak Raos"><img src="https://i.ibb.co.com/SDXFyqpv/logo-sambal-dadak-raos.webp" alt="Sambal Dadak Raos — Sambalnya Bikin Balik Lagi"></a>
@@ -268,7 +247,7 @@
       <div class="shell">
         <div class="hero-content">
           <p class="eyebrow">Kuliner Cirebonan di tengah kota</p>
-          <h1>Ayam Pejantan Goreng dengan Sambal yang Diulek Dadakan Saat Dipesan</h1>
+          <h1>Ayam Pejantan Goreng dengan Sambal yang Diulek Saat Dipesan</h1>
           <p class="hero-lead">Selain ayam pejantan, tersedia tutug oncom, ikan asin peda, pencok, dan sayur asem. Bisa makan di ruangan AC maupun non-AC.</p>
           <div class="actions hero-actions">
             <button class="button button-primary menu-open" type="button" data-track="view_menu" data-track-location="hero">Lihat Menu &amp; Harga</button>
@@ -428,12 +407,13 @@
     window.addEventListener('resize', updateSticky);
     updateSticky();
 
-    // Funnel ringkas: foto menu terlihat, klik Google Maps, dan klik WhatsApp.
-    // PageView Google dikirim oleh Google tag melalui GTM; PageView Meta dikirim di <head>.
+    // Semua platform membaca empat event ini melalui Google Tag Manager.
     const pushDataLayerEvent = (eventName, eventLocation) => {
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({ event: eventName, event_location: eventLocation });
     };
+
+    pushDataLayerEvent('page_view', 'landing_page');
 
     let menuPhotosViewed = false;
     const menuPhotos = document.querySelector('.carousel-wrap');
@@ -441,9 +421,6 @@
       if (!menuPhotosViewed && entries.some((entry) => entry.isIntersecting && entry.intersectionRatio >= 0.5)) {
         menuPhotosViewed = true;
         pushDataLayerEvent('view_content', 'menu_photos');
-        if (typeof window.fbq === 'function') {
-          window.fbq('track', 'ViewContent', { content_name: 'Foto Menu' });
-        }
         observer.disconnect();
       }
     }, { threshold: [0.5] });
@@ -453,9 +430,6 @@
       element.addEventListener('click', () => {
         const eventLocation = element.dataset.trackLocation || 'unknown';
         pushDataLayerEvent('click_google_maps', eventLocation);
-        if (typeof window.fbq === 'function') {
-          window.fbq('trackCustom', 'ClickGoogleMaps', { event_location: eventLocation });
-        }
       });
     });
 
@@ -463,9 +437,6 @@
       element.addEventListener('click', () => {
         const eventLocation = element.dataset.trackLocation || 'unknown';
         pushDataLayerEvent('click_whatsapp', eventLocation);
-        if (typeof window.fbq === 'function') {
-          window.fbq('track', 'Contact', { contact_method: 'whatsapp', event_location: eventLocation });
-        }
       });
     });
   </script>
