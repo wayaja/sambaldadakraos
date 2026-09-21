@@ -250,7 +250,7 @@
           <h1>Ayam Pejantan Goreng dengan Sambal yang Diulek Saat Dipesan</h1>
           <p class="hero-lead">Selain ayam pejantan, tersedia tutug oncom, ikan asin peda, pencok, dan sayur asem. Bisa makan di ruangan AC maupun non-AC.</p>
           <div class="actions hero-actions">
-            <button class="button button-primary menu-open" type="button">Lihat Menu &amp; Harga</button>
+            <button class="button button-primary menu-open js-track-menu" type="button">Lihat Menu &amp; Harga</button>
             <a class="button button-secondary js-track-maps" href="https://share.google/ONDkIrV2JnHUREts3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s6-5.1 6-11a6 6 0 1 0-12 0c0 5.9 6 11 6 11Z"/><circle cx="12" cy="10" r="2"/></svg>Buka Rute ke Lokasi</a>
           </div>
         </div>
@@ -286,7 +286,7 @@
           <button class="active" type="button" aria-label="Menu 1"></button><button type="button" aria-label="Menu 2"></button><button type="button" aria-label="Menu 3"></button><button type="button" aria-label="Menu 4"></button><button type="button" aria-label="Menu 5"></button><button type="button" aria-label="Menu 6"></button>
         </div>
         <p class="menu-proof">Sambal dadaknya sudah terjual ribuan porsi.</p>
-        <div class="menu-action"><button class="button menu-open" type="button">Lihat Buku Menu &amp; Harga</button></div>
+        <div class="menu-action"><button class="button menu-open js-track-menu" type="button">Lihat Buku Menu &amp; Harga</button></div>
       </div>
     </section>
 
@@ -358,7 +358,7 @@
     </div>
   </footer>
 
-  <nav class="sticky" aria-label="Tindakan cepat"><button class="menu-open" type="button">Lihat Menu</button><a class="route js-track-maps" href="https://share.google/ONDkIrV2JnHUREts3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s6-5.1 6-11a6 6 0 1 0-12 0c0 5.9 6 11 6 11Z"/><circle cx="12" cy="10" r="2"/></svg>Buka Rute</a></nav>
+  <nav class="sticky" aria-label="Tindakan cepat"><button class="menu-open js-track-menu" type="button">Lihat Menu</button><a class="route js-track-maps" href="https://share.google/ONDkIrV2JnHUREts3" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s6-5.1 6-11a6 6 0 1 0-12 0c0 5.9 6 11 6 11Z"/><circle cx="12" cy="10" r="2"/></svg>Buka Rute</a></nav>
 
   <dialog id="menuDialog" aria-labelledby="menuTitle">
     <div class="dialog-head"><strong id="menuTitle">Menu Sambal Dadak Raos</strong><button class="close" type="button" aria-label="Tutup menu">×</button></div>
@@ -407,21 +407,6 @@
     window.addEventListener('resize', updateSticky);
     updateSticky();
 
-    // ViewContent dikirim saat section menu terlihat. Klik CTA dibaca GTM dari class HTML.
-    window.dataLayer = window.dataLayer || [];
-
-    var viewContentSent = false;
-    var menuSection = document.getElementById('menu');
-    var viewObserver = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting && !viewContentSent) {
-          viewContentSent = true;
-          window.dataLayer.push({ event: 'view_content' });
-          viewObserver.disconnect();
-        }
-      });
-    }, { threshold: 0.2 });
-    viewObserver.observe(menuSection);
   </script>
 </body>
 </html>
